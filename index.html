@@ -5,7 +5,7 @@
     
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='tools_style.css' type='text/css' id = "theme">
+    <link rel='stylesheet' href='../tools/tools.css' type='text/css' id = "theme">
     <link href="https://fonts.googleapis.com/css?family=Laila:700|Mukta:400,700" rel="stylesheet">
     <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
@@ -24,8 +24,21 @@
   </div>
 
     <div id = "toolBox">
-        <a href = "https://martahenc.from.hr/bmi_kalkulator/" class = "tool">BMI kalkulator</a>
-        <a href = "https://martahenc.from.hr/kcal_kalkulator/" class = "tool">Kalkulator Dnevnih Energetskih Potreba</a>
+        <a href = "https://martahenc.from.hr/bmi_kalkulator/"> <div class = "tool" id = "bmi">
+            <h1>BMI kalkulator</h1>
+            <details>
+                <summary>Najčešće korišteni alat za kategoriziranje pojedinaca na temelju njihove tjelesne mase i visine</summary>
+                <p>Općenito prihvaćeni BMI rasponi su pothranjenost: ispod 18.5 kg/m2, normalna tjelesne masa: 18.5 do 25, prekomjerna tjelesna masa: 25 do 30, pretilost: iznad 30. Glavni nedostatak formule je nemogućnost određivanja omjera mišićnog i masnog tkiva. Pošto je mišićno tkivo teže od masnog tkiva, osobe s većim udjelom mišićnog tkiva mogu biti kategorizirane kao da imaju prekomjernu tjelesnu masu.</p>
+              </details>
+          </div></a>
+
+          <a href = "https://martahenc.from.hr/kcal_kalkulator/"> <div class = "tool" id = "kcal">
+              <h1>Kalkulator dnevnih energetskih potreba</h1>
+              <details>
+                <summary>Metoda za određivanje dnevnih energetskih potreba temeljena na Harris-Benedict jednadžbi</summary>
+                <p>Kalkulator koristi originalnu Harris-Benedict jednadžbu i korigiranu verziju (od mifflin i St Jeor) za izračunavanje bazalnog metabolizma osobe. Rezultat je zatim pomnožen s faktorom koji odgovara razini tjelense aktivnosti pojedinca. Ova metoda ne uzima u obzir omjer mišićnog i masnog tkiva osobe. Dobivene energetske potrebe ne odgovaraju osobama koje su pretile ili pothranjene. Za pretile osobe rezultat se obično umanji za 500-1000 kcal, a za pothranjene osobe se poveća za isti iznos.</p>
+              </details>
+            </div></a>
     </div>
 
     <footer>
